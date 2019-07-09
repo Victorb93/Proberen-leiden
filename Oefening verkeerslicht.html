@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <script>
 
 var groenOranjeRood = ["green","orange","red"];
@@ -36,42 +35,3 @@ function doorklikken() {
 
 <br></br>
 <button id="doorklikken" type="button" onclick="doorklikken()">Doorklikken</button>
-=======
-<script>
-
-var groenOranjeRood = ["green","orange","red"];
-var getal = 0;
-
-function doorklikken() {
-  var cirkel = document.getElementById("cirkel");
-  cirkel.style.backgroundColor = groenOranjeRood [getal]
-  getal = getal + 1;
-  console.log(getal);
-
-
-  if(getal > 2){
-    getal = 0;
-  }
-}
-
-</script>
-
-<style>
-
-.cirkel {
-  height: 100px;
-  width: 100px;
-  background-color: gray;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-
-
-</style>
-
-<span id="cirkel"class="cirkel"></span>
-
-<br></br>
-<button id="doorklikken" type="button" onclick="doorklikken()">Doorklikken</button>
->>>>>>> a5c4494b1f632caf57a58a7987edc0f6b0a7a264
