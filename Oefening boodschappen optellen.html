@@ -1,0 +1,52 @@
+<script>
+
+function rijst() {
+	var bedrag = parseInt(document.getElementById("mijnDiv").value);
+	var nieuwBedrag = parseInt(bedrag + 1);
+	document.getElementById("mijnDiv").value = nieuwBedrag;
+	console.log(rijst);
+}
+
+function broccoli() {
+	var bedrag = parseInt(document.getElementById("mijnDiv").value);
+	var nieuwBedrag = parseInt(bedrag + 1);
+	document.getElementById("mijnDiv").value = nieuwBedrag;
+	console.log(broccoli);
+}
+function aardappelen() {
+	var bedrag = parseInt(document.getElementById("mijnDiv").value);
+	var nieuwBedrag = parseInt(bedrag + 3);
+	document.getElementById("mijnDiv").value = nieuwBedrag;
+	console.log(aardappelen);
+}
+function uien() {
+	var bedrag = parseInt(document.getElementById("mijnDiv").value);
+	var nieuwBedrag = parseInt(bedrag + 2);
+	document.getElementById("mijnDiv").value = nieuwBedrag;
+	console.log(uien);
+}
+
+function kip() {
+	var bedrag = parseInt(document.getElementById("mijnDiv").value);
+	var nieuwBedrag = parseInt(bedrag + 5);
+	document.getElementById("mijnDiv").value = nieuwBedrag;
+	console.log(kip);
+}
+
+
+</script>
+
+
+
+
+<input id="rijst" type=button onclick="rijst()" value="rijst 1.00">
+<br></br>
+<input id="broccoli" type=button onclick="broccoli()" value="broccoli 1.00">
+<br></br>
+<input id="aardappelen" type=button onclick="aardappelen()" value="aardappels 3.00">
+<br></br>
+<input id="uien" type=button onclick="uien()" value="uien 2.00">
+<br></br>
+<input id="kip" type=button onclick="kip()" value="kip 5.00">
+<br></br>
+<input type="button" value="0" id="mijnDiv">

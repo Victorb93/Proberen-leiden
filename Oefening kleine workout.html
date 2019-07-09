@@ -1,0 +1,33 @@
+<button onclick="oefening()">Klik voor de oefening</button>
+
+<p id="oefening"></p>
+<img id="mijnplaatje" src="bench-press.gif" alt="" style="display:none" width="100" height="100">
+
+<script>
+function oefening() {
+  document.getElementById("oefening").innerHTML = "Benchpress";
+  var eenplaatje = document.getElementById("mijnplaatje");
+  eenplaatje.style.display = "block";
+}
+</script>
+
+
+<button onclick="setjes()">Klik voor het aantal setjes</button>
+
+<p id="setjes"></p>
+
+<script>
+function setjes() {
+    document.getElementById("setjes").innerHTML = "4 setjes";
+}
+</script>
+
+<button onclick="herhalingen()">Klik voor het aantal herhalingen per setje</button>
+
+<p id="herhalingen"></p>
+
+<script>
+function herhalingen() {
+    document.getElementById("herhalingen").innerHTML = "12 herhalingen";
+}
+</script>
