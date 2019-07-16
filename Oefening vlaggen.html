@@ -1,0 +1,172 @@
+<html>
+    <head>
+
+        <script>
+          var rij1 = ["red"];
+          var rij2 = ["white"];
+          var rij3 = ["blue"];
+
+          function nederland(){
+            var rij1 = document.getElementById("rij1");
+            rij1.style.backgroundColor = ["red"];
+
+            var rij2 = document.getElementById("rij2");
+            rij2.style.backgroundColor = ["white"];
+
+            var rij3 = document.getElementById("rij3");
+            rij3.style.backgroundColor = ["blue"];
+
+            console.log(nederland);
+          }
+          var rij1 = ["black"];
+          var rij2 = ["red"];
+          var rij3 = ["yellow"];
+
+          function duitsland(){
+            var rij1 = document.getElementById("rij1");
+            rij1.style.backgroundColor = ["black"];
+
+            var rij2 = document.getElementById("rij2");
+            rij2.style.backgroundColor = ["red"];
+
+            var rij3 = document.getElementById("rij3");
+            rij3.style.backgroundColor = ["yellow"];
+
+            console.log(duitsland);
+          }
+          var rij1 = ["white"];
+          var rij2 = ["green"];
+          var rij3 = ["red"];
+
+          function bulgarije(){
+            var rij1 = document.getElementById("rij1");
+            rij1.style.backgroundColor = ["white"];
+
+            var rij2 = document.getElementById("rij2");
+            rij2.style.backgroundColor = ["green"];
+
+            var rij3 = document.getElementById("rij3");
+            rij3.style.backgroundColor = ["red"];
+
+            console.log(bulgarije);
+          }
+          var rij1 = ["red"];
+          var rij2 = ["white"];
+          var rij3 = ["green"];        
+
+          function hongarije(){
+            var rij1 = document.getElementById("rij1");
+            rij1.style.backgroundColor = ["red"];
+
+            var rij2 = document.getElementById("rij2");
+            rij2.style.backgroundColor = ["white"];
+
+            var rij3 = document.getElementById("rij3");
+            rij3.style.backgroundColor = ["green"];
+
+            console.log(hongarije);
+          }
+          var rij1 = ["yellow"];
+          var rij2 = ["green"];
+          var rij3 = ["red"];   
+
+          function litouwen(){
+            var rij1 = document.getElementById("rij1");
+            rij1.style.backgroundColor = ["yellow"];
+
+            var rij2 = document.getElementById("rij2");
+            rij2.style.backgroundColor = ["green"];
+
+            var rij3 = document.getElementById("rij3");
+            rij3.style.backgroundColor = ["red"];
+
+            console.log(litouwen);
+          }
+
+          var vlagNederland = ["red","white","blue"];
+          var vlagDuitsland = ["black","red","yellow"];
+          var vlagBulgarije = ["white","green","red"];
+          var vlagHongarije = ["red","white","green"];
+          var vlagLitouwen = ["yellow","green","red"];
+
+
+
+          function random(){
+            var opties = [vlagNederland, vlagDuitsland, vlagHongarije, vlagBulgarije, vlagLitouwen];
+            var keuze = Math.floor(Math.random() * opties.length);
+            var rij1 = document.getElementById("rij1");
+            rij1.style.backgroundColor = opties[keuze][0];
+
+            var rij2 = document.getElementById("rij2");
+            rij2.style.backgroundColor = opties[keuze][1];
+
+            var rij3 = document.getElementById("rij3");
+            rij3.style.backgroundColor = opties[keuze][2];
+          }
+
+          
+
+    
+
+
+
+        </script>
+
+        <style>
+          
+          table{
+            border: 1px solid black;
+            border-collapse: collapse;
+
+          
+          }
+          td{
+            border: 1px solid black;
+            width: 200px;
+            height: 50px;
+          }
+
+    
+
+        </style>
+    </head>
+    <body>
+
+        <table>
+            <tr id="rij1">
+              <td></td>
+            </tr>
+
+            <tr id="rij2">
+              <td></td>
+            </tr>
+
+              <tr id="rij3">
+              <td></td>
+            </tr>
+          </table>
+
+          <br>
+
+    <input type="button" value="Nederland" onclick="nederland()">
+    <br>
+    <br>
+    <input type="button" value="Duitsland" onclick="duitsland()">
+    <br>
+    <br>
+    <input type="button" value="Bulgarije" onclick="bulgarije()">
+    <br>
+    <br>
+    <input type="button" value="Hongarije" onclick="hongarije()">
+    <br>
+    <br>
+    <input type="button" value="Litouwen" onclick="litouwen()">
+    <br>
+    <br>
+    <input type="button" value="Random" onclick="random()">
+
+
+    
+    </body>
+
+</html>

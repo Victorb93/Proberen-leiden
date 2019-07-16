@@ -1,0 +1,76 @@
+<html>
+<head>
+
+
+<script>
+
+var goedeAntwoorden = 0;
+
+
+function check() {
+
+    var gewonnen = document.getElementById("deDiv");
+        
+    if (document.getElementById("usa").checked){
+    goedeAntwoorden = goedeAntwoorden +1;
+    }
+
+    if (document.getElementById("ajax").checked){
+    goedeAntwoorden = goedeAntwoorden +1;
+    }
+
+    if (document.getElementById("deBoer").checked){
+    goedeAntwoorden = goedeAntwoorden +1;
+    }
+
+    if (document.getElementById("2010").checked){
+    goedeAntwoorden = goedeAntwoorden +1;
+    
+    }
+    if (goedeAntwoorden == 4){
+        gewonnen.innerhtml = "gewonnen!"
+
+    }
+}
+</script>
+
+</head>
+<body>
+
+<h5>Welk land won in 2019 het WK vrouwenvoetbal?<h5>
+<form>
+  <input type="checkbox" id="usa" value="usa">Usa<br>
+  <input type="checkbox" id="nederland" value="nederland">Nederland<br>
+  <input type="checkbox" id="zweden" value="zweden">Zweden<br>
+  <input type="checkbox" id="italïe" value="italië">Italië<br><br>
+</form>
+
+<p>Welk team won in 2019 de landstitel in de eredivisie?</p>
+<form>
+  <input type="checkbox" id="feyenoord" value="feyenoord">Feyenoord<br>
+  <input type="checkbox" id="psv" value="psv">Psv<br>
+  <input type="checkbox" id="ajax" value="ajax">Ajax<br>
+  <input type="checkbox" id="utrecht" value="utrecht">Utrecht<br><br>
+</form>
+
+<p>Onder welke trainer werd ajax 4 maal op rij landskampioen?</p>
+<form>
+  <input type="checkbox" id="vanGaal" value="vanGaal">van Gaal<br>
+  <input type="checkbox" id="deBoer" value="deBoer">de Boer<br>
+  <input type="checkbox" id="bos" value="bos">Bos<br>
+  <input type="checkbox" id="tenHag" value="tenHag">ten Hag<br><br>
+</form>
+
+<p>In welk jaar speelde Nederland de WK finale tegen Spanje?</p>
+<form>
+  <input type="checkbox" id="2007" value="2007">2007<br>
+  <input type="checkbox" id="2008" value="2008">2008<br>
+  <input type="checkbox" id="2009" value="2009">2009<br>
+  <input type="checkbox" id="2010" value="2010">2010<br>
+</form>
+
+  <input type="submit" onclick="check()" value="Check antwoord"><br>
+  <div id="deDiv"></div>
+
+</body>
+</html>

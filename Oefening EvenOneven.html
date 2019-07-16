@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <script>
+            
+            function checkGetal() {
+                
+                var even = document.getElementById("even");
+                var oneven = document.getElementById("oneven");
+                var getal = document.getElementById("getal");
+                   
+                    if (getal.value % 2 == 0) {
+                        even.innerHTML = getal.value;
+                        console.log(getal.value);
+                    } 
+                    else {
+                        oneven.innerHTML = getal.value;
+                        console.log(getal.value);
+                        }
+            }
+               
+        </script>
+
+        <style>
+            #even {
+                border: 2px solid black;
+                width: 25px;
+                height: 25px;
+                background-color: gray;
+                }
+
+            #oneven {
+                border: 2px solid black;
+                width: 25px;
+                height: 25px;
+                background-color: gray;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        Voer getal in: <input id="getal" type="text"> <input type="button" value="Checken" onclick="checkGetal()">
+        <br><br>
+        <div id="even"></div>Even getallen
+        <br><br>
+        <div id="oneven"></div>Oneven getallen
+    
+    </body>
+
+</html>
